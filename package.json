@@ -1,0 +1,26 @@
+{
+  "name": "recipies-demo-monorepo",
+  "version": "1.0.0",
+  "description": "A collection of the recipe sharing app written in various frameworks",
+  "main": "index.js",
+  "author": "Robert Wilson <robwilson101@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "turbo run test",
+    "dev": "turbo run dev",
+    "clean": "turbo run clean",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo run typecheck"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "volta": {
+    "node": "20.10.0"
+  },
+  "devDependencies": {
+    "turbo": "^1.11.2"
+  }
+}
