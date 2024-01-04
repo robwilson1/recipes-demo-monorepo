@@ -27,6 +27,7 @@ module.exports = {
     React: true,
     JSX: true,
   },
+  plugins: ["only-warn"],
   settings: {
     "import/resolver": {
       typescript: {
@@ -36,5 +37,7 @@ module.exports = {
   },
   ignorePatterns: ["node_modules/", "dist/"],
   // add rules configurations here
-  rules: {},
+  rules: {
+    "import/no-default-export": "off",
+  },
 };
