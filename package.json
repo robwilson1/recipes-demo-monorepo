@@ -12,7 +12,7 @@
     "build": "turbo build",
     "lint": "turbo lint",
     "typecheck": "turbo run typecheck",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md,html,js}\""
   },
   "workspaces": [
     "apps/*",
