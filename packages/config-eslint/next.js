@@ -38,7 +38,10 @@ module.exports = {
   ignorePatterns: ["node_modules/", "dist/"],
   // add rules configurations here
   rules: {
-    "import/no-default-export": "off",
+    "@typescript-eslint/array-type": "generic",
     "@typescript-eslint/explicit-function-return-type": "off",
+    "import/no-default-export": "off",
+    "import/no-extraneous-depencenies": "off",
+    "react/jsx-sort-props": "off",
   },
 }

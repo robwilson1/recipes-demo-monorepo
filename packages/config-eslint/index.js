@@ -32,7 +32,9 @@ module.exports = {
     "dist/",
   ],
   rules: {
-    "@typescript-eslint/explicit-function-return-type": "error",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/array-type": "generic",
+    "react/jsx-sort-props": "off",
   },
   overrides: [
     {

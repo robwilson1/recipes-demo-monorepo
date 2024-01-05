@@ -1,8 +1,7 @@
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
-
-const inter = Inter({ subsets: ["latin"] })
+import CssBaseline from "@mui/material/CssBaseline"
+import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter"
+import { Box } from "@mui/material"
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <CssBaseline enableColorScheme />
+        <AppRouterCacheProvider>
+          <Box marginY={16}>{children}</Box>
+        </AppRouterCacheProvider>
+      </body>
     </html>
   )
 }
