@@ -1,0 +1,8 @@
+build
+dist
+output
+coverage
+.next
+.turbo
+.vscode
+node_modules

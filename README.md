@@ -1,4 +1,4 @@
-# Recipe 
+# Recipe
 
 This monorepo contains workspaces for building the same recipe sharing app with various JavaScript based front-end technologies with a focus on meta-frameworks. The purpose of the project is for education and to highlight the differences and similarities between using these technologies.
 
