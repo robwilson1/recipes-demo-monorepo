@@ -8,6 +8,9 @@
   "scripts": {
     "test": "turbo run test",
     "dev": "turbo run dev",
+    "dev:htmx": "turbo run dev --filter=htmx --filter=api",
+    "dev:next": "turbo run dev --filter=next --filter=api",
+    "dev:remix": "turbo run dev --filter=remix --filter=api",
     "clean": "turbo run clean",
     "build": "turbo build",
     "lint": "turbo lint",
